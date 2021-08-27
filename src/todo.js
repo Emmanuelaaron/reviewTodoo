@@ -19,6 +19,7 @@ const deleteTodo = (arr) => {
   if (arr.length > 0) {
     const newArr = arr.filter((todo) => todo.completed === false);
     IndexArrangement(newArr);
+    location.reload()
     return newArr;
   }
 };
